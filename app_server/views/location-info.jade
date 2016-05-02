@@ -8,7 +8,7 @@ block content
     .col-xs-12.col-md-9
       .row
         .col-xs-12.col-sm-6
-          .prating
+          p.rating
             span.glyphicon.glyphicon-star
             span.glyphicon.glyphicon-star
             span.glyphicon.glyphicon-star 
@@ -40,11 +40,10 @@ block content
               | &nbsp;
         .col-xs-12.col-sm-6.location-map
           .panel.panel-primary
-            .panel-primary
-              .panel-heading
-                h2.panel-title Location Map
-              .panel-body
-                img.img-responsive.img-rounded(src='http://;maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+            .panel-heading
+              h2.panel-title Location Map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
   .row
     .col-xs-12
       .panel.panel-primary.review-panel
@@ -75,7 +74,7 @@ block content
                   span.glyphicon.glyphicon-star-empty
                   span.glyphicon.glyphicon-star-empty
                 span.reviewAuthor Charlie Chaplin
-                small .reviewTimestamp 16 June 2013
+                small.reviewTimestamp 16 June 2013
               .col-xs-12
                 p It was okay. Coffee wasn't great, but the wifi was fast.
   .col-xs-12.col-md-3
