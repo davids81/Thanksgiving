@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Available Positions
+  .row
+    .col-xs-12.col-md-6
+      .panel.panel-primary
+        .panel-heading
+          .h2.panel-title Dining Room
+        .panel-body
+          form.form-horizontal(action='/', method='post', role='form')
+            .form-group
+              .col-xs-6
+                p Position Title: Server
+                p Start Time: 10:30am
+                p End Time: 12:00pm
+                p Positions Available: 4
+            input(type='hidden', name='position_id', value='123456')
+            button.btn.btn-default.pull-left Register 
+      .panel.panel-primary
+        .panel-heading
+          .h2.panel-title Dining Room
+        .panel-body
+          form.form-horizontal(action='/', method='post', role='form')
+            .form-group
+              .col-xs-6
+                p Position Title: Server
+                p Start Time: 10:30am
+                p End Time: 12:00pm
+                p Positions Available: 4
+            input(type='hidden', name='position_id', value='234567')
+            button.btn.btn-default.pull-left Register 
+  .row
+    .col-xs-12.col-md-12
+      .panel.panel-primary
+        .panel-heading
+          .h2.panel-title Dining Room
+        .panel-body
+          .row
+            .col-sm-2
+              p Title
+            .col-sm-2
+              p Start Time
+            .col-sm-2
+              p End Time
+            .col-sm-2
+              p Number Available
+            .col-sm-4
+          .row
+            form.form-horizontal(action='/', method='post', role='form')
+              .col-sm-2
+                p Server
+              .col-sm-2
+                p 10:30am
+              .col-sm-2
+                p 12:00pm
+              .col-sm-2
+                p 4
+              .col-sm-4
+                button.btn.btn-default Register
+          .row
+            form.form-horizontal(action='/', method='post', role='form')
+              .col-sm-2
+                p Server
+              .col-sm-2
+                p 12:00pm
+              .col-sm-2
+                p 1:30pm
+              .col-sm-2
+                p 4
+              .col-sm-4
+                button.btn.btn-default Register
