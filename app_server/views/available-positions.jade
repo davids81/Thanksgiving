@@ -10,7 +10,7 @@ block content
         .panel-heading
           .h2.panel-title Dining Room
         .panel-body
-          form.form-horizontal(action='/', method='post', role='form')
+          form(action='/', method='post', role='form')
             .form-group
               .col-xs-6
                 p Position Title: Server
@@ -23,7 +23,7 @@ block content
         .panel-heading
           .h2.panel-title Dining Room
         .panel-body
-          form.form-horizontal(action='/', method='post', role='form')
+          form.form(action='/', method='post', role='form')
             .form-group
               .col-xs-6
                 p Position Title: Server
@@ -32,6 +32,21 @@ block content
                 p Positions Available: 4
             input(type='hidden', name='position_id', value='234567')
             button.btn.btn-default.pull-left Register 
+      .panel.panel-primary
+        .panel-heading
+          .h2.panel-title Driving
+        .panel-body
+          form.form(action='/', method='post', role='form')
+            .col-xs-6
+              .form-group 
+                p Position Title: Server
+                p Start Time: 10:30am
+                p End Time: 12:00pm
+                p Positions Available: 4
+            .col-xs-6 
+              .form-group
+                input(type='hidden', name='position_id', value='234567')
+                input(type='submit', value='register') 
   .row
     .col-xs-12.col-md-12
       .panel.panel-primary
@@ -45,9 +60,9 @@ block content
               p Start Time
             .col-sm-2
               p End Time
-            .col-sm-2
-              p Number Available
             .col-sm-4
+              p Number Available
+            .col-sm-2
           .row
             form.form-horizontal(action='/', method='post', role='form')
               .col-sm-2
@@ -56,10 +71,10 @@ block content
                 p 10:30am
               .col-sm-2
                 p 12:00pm
-              .col-sm-2
-                p 4
               .col-sm-4
-                button.btn.btn-default Register
+                p 4
+              .col-sm-2
+                button.btn.btn-sm.pull-right Register
           .row
             form.form-horizontal(action='/', method='post', role='form')
               .col-sm-2
@@ -68,7 +83,7 @@ block content
                 p 12:00pm
               .col-sm-2
                 p 1:30pm
-              .col-sm-2
-                p 4
               .col-sm-4
-                button.btn.btn-default Register
+                p 4
+              .col-sm-2
+                button.btn.btn-sm.pull-right Register
