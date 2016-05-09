@@ -5,85 +5,144 @@ block content
     .col-lg-12
       h1 Available Positions
   .row
-    .col-xs-12.col-md-6
+    .col-xs-12
       .panel.panel-primary
         .panel-heading
-          .h2.panel-title Dining Room
+          .h2.panel-title Server
         .panel-body
           form(action='/', method='post', role='form')
-            .form-group
-              .col-xs-6
-                p Position Title: Server
-                p Start Time: 10:30am
-                p End Time: 12:00pm
-                p Positions Available: 4
             input(type='hidden', name='position_id', value='123456')
-            button.btn.btn-default.pull-left Register 
+            .col-xs-12.col-sm-4        
+              span.lead Available Times:
+              .row
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 10:30am - 12:00pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 12:00pm - 1:30pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 1:30pm - 3:00pm
+            .col-xs-12.col-sm-6
+              span.lead Description:
+              p.
+                Deal with people and walk a ton. Involves
+                lots of time working on your feet helping people get the
+                food they came for
+          button.btn.btn-default.btn-block Add Registrant
       .panel.panel-primary
         .panel-heading
-          .h2.panel-title Dining Room
+          .h2.panel-title Host/Hostess
         .panel-body
-          form.form(action='/', method='post', role='form')
-            .form-group
-              .col-xs-6
-                p Position Title: Server
-                p Start Time: 10:30am
-                p End Time: 12:00pm
-                p Positions Available: 4
-            input(type='hidden', name='position_id', value='234567')
-            button.btn.btn-default.pull-left Register 
+          form(action='/', method='post', role='form')
+            input(type='hidden', name='position_id', value='123456')
+            .col-xs-12.col-sm-4        
+              span.lead Available Times:
+              .row
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 10:30am - 12:00pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 12:00pm - 1:30pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 1:30pm - 3:00pm
+            .col-xs-12.col-sm-6
+              span.lead Description:
+              p.
+                Deal with people and walk a ton. Involves
+                lots of time working on your feet helping people get the
+                food they came for
+          button.btn.btn-default.btn-block Add Registrant
       .panel.panel-primary
         .panel-heading
-          .h2.panel-title Driving
+          .h2.panel-title Beverage
         .panel-body
-          form.form(action='/', method='post', role='form')
-            .col-xs-6
-              .form-group 
-                p Position Title: Server
-                p Start Time: 10:30am
-                p End Time: 12:00pm
-                p Positions Available: 4
-            .col-xs-6 
-              .form-group
-                input(type='hidden', name='position_id', value='234567')
-                input(type='submit', value='register') 
-  .row
-    .col-xs-12.col-md-12
+          form(action='/', method='post', role='form')
+            input(type='hidden', name='position_id', value='123456')
+            .col-xs-12.col-sm-4        
+              span.lead Available Times:
+              .row
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 10:30am - 12:00pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 12:00pm - 1:30pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 1:30pm - 3:00pm
+            .col-xs-12.col-sm-6
+              span.lead Description:
+              p.
+                Deal with people and walk a ton. Involves
+                lots of time working on your feet helping people get the
+                food they came for
+          button.btn.btn-default.btn-block Add Registrant
       .panel.panel-primary
         .panel-heading
-          .h2.panel-title Dining Room
+          .h2.panel-title Pies
         .panel-body
-          .row
-            .col-sm-2
-              p Title
-            .col-sm-2
-              p Start Time
-            .col-sm-2
-              p End Time
-            .col-sm-4
-              p Number Available
-            .col-sm-2
-          .row
-            form.form-horizontal(action='/', method='post', role='form')
-              .col-sm-2
-                p Server
-              .col-sm-2
-                p 10:30am
-              .col-sm-2
-                p 12:00pm
-              .col-sm-4
-                p 4
-              .col-sm-2
-                button.btn.btn-sm.pull-right Register
-          .row
-            form.form-horizontal(action='/', method='post', role='form')
-              .col-sm-2
-                p Server
-              .col-sm-2
-                p 12:00pm
-              .col-sm-2
-                p 1:30pm
-              .col-sm-4
-                p 4
-              .col-sm-2
-                button.btn.btn-sm.pull-right Register
+          form(action='/', method='post', role='form')
+            input(type='hidden', name='position_id', value='123456')
+            .col-xs-12.col-sm-4        
+              span.lead Available Times:
+              .row
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 10:30am - 12:00pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 12:00pm - 1:30pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 1:30pm - 3:00pm
+            .col-xs-12.col-sm-6
+              span.lead Description:
+              p.
+                Deal with people and walk a ton. Involves
+                lots of time working on your feet helping people get the
+                food they came for
+          button.btn.btn-default.btn-block Add Registrant
+       .panel.panel-primary
+        .panel-heading
+          .h2.panel-title Cleanup
+        .panel-body
+          form(action='/', method='post', role='form')
+            input(type='hidden', name='position_id', value='123456')
+            .col-xs-12.col-sm-4        
+              span.lead Available Times:
+              .row
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 10:30am - 12:00pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 12:00pm - 1:30pm
+                .radio
+                  label
+                    input(type="radio", name="optradio" value="0")
+                    | 1:30pm - 3:00pm
+            .col-xs-12.col-sm-6
+              span.lead Description:
+              p.
+                Deal with people and walk a ton. Involves
+                lots of time working on your feet helping people get the
+                food they came for
+          button.btn.btn-default.btn-block Add Registrant
