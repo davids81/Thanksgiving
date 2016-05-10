@@ -17,7 +17,8 @@ router.get('/about', ctrlOthers.about);
 
 /* Thanksgiving Pages */
 router.get('/availablepositions', ctrlThanksgiving.availablePositions);
-
+router.get('/accountsummary', ctrlThanksgiving.accountSummary);
+router.get('/newuser', ctrlThanksgiving.newUser);
 
 module.exports = router;
 

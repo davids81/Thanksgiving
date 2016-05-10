@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Add new user
+  .row
+    .col-xs-12.col-md-6
+      form.form-horizontal(action='/availablepositions', method="get", role="form")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="name") Name
+          .col-xs-12.col-sm-9
+            input#name.form-control(name="name")
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for="relationship") Relationship
+          .col-xs-12.col-sm-4
+            select#relationship.form-control.input-sm(name="relationship")
+              option Spouse
+              option Child
+              option Friend
+              option Parent
+              option Other
+        .form-group
+          label.col-xs-10.col-sm-3.control-label(for='age-verify') Over 16
+          .col-xs-3
+            input#age-verify(name='age-verify' type='checkbox')
+        button.btn.btn-default.pull-right Create New Registrant
+    .col-xs-12.col-md-4
