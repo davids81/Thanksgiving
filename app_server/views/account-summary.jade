@@ -3,75 +3,35 @@ extends layout
 block content
   .row.page-header
     .col-lg-12
-      h1 Summary for Penny
+      h1=account.name
   .row.list-group
     .col-xs-12.col-sm-10
+      each registrant in account.registrants 
         .list-group-item
           .row
-            .col-xs-12.col-sm-6
+            .col-xs-12.col-sm-4
               p.list-group-item-heading Volunteer: 
-              h4 Sheldon Cooper
-            .col-xs-12.col-sm-6
+              h4
+                a(href='/newuser')=registrant.name
+            .col-xs-12.col-sm-4
               p.list-group-item-heading Position:
-              h4 Serve @ 12:00pm - 1:30pm
+              h4
+                a(href='/availablepositions')=registrant.positionName
+            .col-xs-12.col-sm-4
+              p.list-group-item-heading Time:
+              h4=registrant.positionTime
+          hr
+          .row.hidden-xs
+            p Position Description
+            p=registrant.positionDescription
           .row
             ul.nav.nav-pills.nav-justified
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Personal Info
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Position
               li.col-xs-12.col-sm-4(role='presentation')
                 a(href='/') Delete Person 
-        .list-group-item
-          .row
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Volunteer: 
-              h4 Sheldon Cooper
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Position:
-              h4 Serve @ 12:00pm - 1:30pm
-          .row
-            ul.nav.nav-pills.nav-justified
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Personal Info
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Position
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Delete Person 
-        .list-group-item
-          .row
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Volunteer: 
-              h4 Sheldon Cooper
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Position:
-              h4 Serve @ 12:00pm - 1:30pm
-          .row
-            ul.nav.nav-pills.nav-justified
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Personal Info
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Position
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Delete Person 
-        .list-group-item
-          .row
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Volunteer: 
-              h4 Sheldon Cooper
-            .col-xs-12.col-sm-6
-              p.list-group-item-heading Position:
-              h4 Serve @ 12:00pm - 1:30pm
-          .row
-            ul.nav.nav-pills.nav-justified
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Personal Info
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Edit Position
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Delete Person
   .row
     .col-xs-12
       span.glyphicon.glyphicon-plus
-      a.lead(href='/newuser') Add New User        
+      a.lead(href='/newuser') Add New User
+
+        
         

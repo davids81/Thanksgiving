@@ -5,7 +5,39 @@ module.exports.availablePositions = function(req, res) {
 };
 
 module.exports.accountSummary = function(req, res) {
-    res.render('account-summary', {title: 'Account Summary'});
+    res.render('account-summary', {
+        title: 'Account Summary',
+        account: {
+            name: 'Penny',
+            email: 'penny@penny.gmail.com',
+            registrants: [
+                {
+                    name: 'Sheldon Cooper',
+                    positionName: 'Server',
+                    positionTime: '12:00pm - 1:30pm',
+                    positionDescription: 'Serve people, duh'
+                },
+                {
+                    name: 'Leonard Hofstadter',
+                    positionName: 'Beverages',
+                    positionTime: '10:30pm - 12:00pm',
+                    positionDescription: 'Keep the cups full'
+                },
+                {
+                    name: 'Howard Wolowitz',
+                    positionName: 'Pies',
+                    positionTime: '1:00pm - 2:30pm',
+                    positionDescription: 'In their faces!!'
+                },
+                {
+                    name: 'Raj Koothrappali',
+                    positionName: 'Driver',
+                    positionTime: 'All day',
+                    positionDescription: 'Heavy equipment operations'
+                }
+            ]
+        }
+    });
 };
 
 module.exports.newUser = function(req, res) {
