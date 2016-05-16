@@ -21,13 +21,12 @@ block content
               p.list-group-item-heading Time:
               h4=registrant.positionTime
           hr
-          .row.hidden-xs
-            p Position Description
+          .row.col-xs-12.hidden-xs
+            p.list-group-item-heading Position Description
             p=registrant.positionDescription
           .row
-            ul.nav.nav-pills.nav-justified
-              li.col-xs-12.col-sm-4(role='presentation')
-                a(href='/') Delete Person 
+            .col-xs-12
+              button.btn.btn-default.btn-block Delete Person 
   .row
     .col-xs-12
       span.glyphicon.glyphicon-plus

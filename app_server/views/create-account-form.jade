@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Sign In
+  .row
+    .col-xs-12.col-md-6.col-md-offset-3
+      form.form-horizontal(action='/accountsummary', method="get", role="form")
+        form-group
+          .row
+            label.control-label(for='username') User Name
+            input#username.form-control(name='username')
+          .row
+            label.control-label(for="email") Email
+            input#email.form-control(name="email")
+          .row
+            label.control-label(for="pw") Password
+            input#pw.form-control(name="pw")
+          .row
+            label.control-label(for='confirmpw') Confirm Password
+            input#confirmpw.form-control(name='confirmpw')
+        form-group
+          .row
+            button.btn.btn-default.btn-block.voffset3 Create Account
+         

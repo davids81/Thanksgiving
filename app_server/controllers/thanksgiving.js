@@ -43,3 +43,22 @@ module.exports.accountSummary = function(req, res) {
 module.exports.newUser = function(req, res) {
     res.render('new-user-form', { title: 'New User Form' });
 };
+
+module.exports.signIn = function(req, res) {
+   res.render('sign-in-form', { title: 'Sign in'});
+};
+
+module.exports.createAccount = function(req, res) {
+    console.log("it's working");
+    res.render('create-account-form', { title: 'Create New Account' });
+};
+
+module.exports.signInRouter = function(req, res) {
+    console.log('it\'s working');
+    console.log(req.body);
+    console.log(req.body.action);
+    if (req.body.action === 'createaccount')
+        res.render('create-account-form');
+    else
+        res.render('account-summary');    
+};

@@ -19,6 +19,9 @@ router.get('/about', ctrlOthers.about);
 router.get('/availablepositions', ctrlThanksgiving.availablePositions);
 router.get('/accountsummary', ctrlThanksgiving.accountSummary);
 router.get('/newuser', ctrlThanksgiving.newUser);
+router.get('/signin', ctrlThanksgiving.signIn);
+router.get('/newAccount', ctrlThanksgiving.signIn);
+router.post('/signInRouter', ctrlThanksgiving.signInRouter);
 
 module.exports = router;
 
