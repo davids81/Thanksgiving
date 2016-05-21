@@ -57,8 +57,42 @@ module.exports.signInRouter = function(req, res) {
     console.log('it\'s working');
     console.log(req.body);
     console.log(req.body.action);
-    if (req.body.action === 'createaccount')
+    if (req.body.action === 'createaccount') {
         res.render('create-account-form');
-    else
-        res.render('account-summary');    
+    } else {
+        res.render('account-summary', {
+        title: 'Account Summary',
+        account: {
+            name: 'Penny',
+            email: 'penny@penny.gmail.com',
+            phone: '',
+            registrants: [
+                {
+                    name: 'Sheldon Cooper',
+                    positionName: 'Server',
+                    positionTime: '12:00pm - 1:30pm',
+                    positionDescription: 'Serve people, duh'
+                },
+                {
+                    name: 'Leonard Hofstadter',
+                    positionName: 'Beverages',
+                    positionTime: '10:30pm - 12:00pm',
+                    positionDescription: 'Keep the cups full'
+                },
+                {
+                    name: 'Howard Wolowitz',
+                    positionName: 'Pies',
+                    positionTime: '1:00pm - 2:30pm',
+                    positionDescription: 'In their faces!!'
+                },
+                {
+                    name: 'Raj Koothrappali',
+                    positionName: 'Driver',
+                    positionTime: 'All day',
+                    positionDescription: 'Heavy equipment operations'
+                }              
+            ]
+        }
+    });    
+    }
 };
