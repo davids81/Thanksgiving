@@ -1,0 +1,27 @@
+{
+  "_id": ObjectId("507f191e810c19729de860bb"),
+  "accountName" : "Penny",
+  "accountEmail" : "Penny@penny.com",
+  "password": "someencryptedvalue",
+  "registrants" : [{
+    "_id": ObjectId("507f191e810c19729de860ea"),
+    "firstName": "Sheldon",
+    "lastName": "Cooper",
+    "age": 30,
+  }, {
+    "_id": ObjectId("507f191e810c19729de860eb"),
+    "firstName": "Leonard",
+    "lastName": "Hofstadter",
+    "age": 31,
+  }, {
+    "_id": ObjectId("507f191e810c19729de860ec"),
+    "firstName": "Howard",
+    "lastName": "Wolowitz",
+    "age": 30,
+  }, {
+    "_id": ObjectId("507f191e810c19729de860ed"),
+    "firstName": "Raj",
+    "lastName": "Koothrappali",
+    "age": 33,
+  }]
+}

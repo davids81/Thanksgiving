@@ -1,27 +1,18 @@
-{
-  "_id": ObjectId("507f191e810c19729de860bb")
-  "accountName" : "Penny",
-  "accountEmail" : "Penny@penny.com",
-  "password": "someencryptedvalue"
-  "registrants" : [{
-    "_id": ObjectId("507f191e810c19729de860ea"),
-    "first_name": "Sheldon",
-    "last_name": "Cooper",
-    "age": 30,
-  }, {
-    "_id": ObjectId("507f191e810c19729de860eb"),
-    "first_name": "Leonard",
-    "last_name": "Hofstadter",
-    "age": 31,
-  }, {
-    "_id": ObjectId("507f191e810c19729de860ec"),
-    "first_name": "Howard",
-    "last_name": "Wolowitz",
-    "age": 30,
-  }, {
-    "_id": ObjectId("507f191e810c19729de860ed"),
-    "first_name": "Raj",
-    "last_name": "Koothrappali",
-    "age": 33,
-  }]
-}
+
+
+var mongoose = require("mongoose");
+
+var registrantSchema = new mongoose.Schema({
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  age: { type: String, required: true }
+}),
+
+var accountSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+  registrants: [registrantSchema]
+});
+
+mongoose.model("Account", accountSchema, "accounts");

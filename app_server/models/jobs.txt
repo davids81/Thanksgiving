@@ -1,0 +1,27 @@
+{
+	"jobs": [{
+		"jobName": "Server",
+		"startTime": "10:30am",
+		"endTime": "12:00pm",
+		"jobDescription": "serve people",
+		"owner": ObjectId("507f191e810c19729de860ea")
+	}, {
+		"jobName": "Server",
+		"startTime": "12:00pm",
+		"endTime": "1:30pm",
+		"jobDescription": "serve people",
+		"owner": ObjectId("507f191e810c19729de860eb")
+	}, {
+		"jobName": "Beverages",
+		"startTime": "10:30am",
+		"endTime": "12:00pm",
+		"jobDescription": "pour drinks",
+		"owner": ObjectId("507f191e810c19729de860ec")
+	}, {
+		"jobName": "Pies",
+		"startTime": "10:30am",
+		"endTime": "12:00pm",
+		"jobDescription": "throw pies in people's faces -it's pretty fun",
+		"owner": ObjectId("507f191e810c19729de860ed")
+	}]
+}
